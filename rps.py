@@ -1,6 +1,7 @@
 # Anthony Quiroz
 # Rock Paper Scissors
 # rps.py
+# added comment for github
 import random 
 # Variables
 pScore = 0
