@@ -57,11 +57,35 @@ while True:
 			print("Rock breaks scissors")
 			pScore += 1
 # Player picks paper
-	if pMove == "p":
-		pass
+	elif pMove == "p":
+		print(pName + " picked Paper")
+		if cMove == "rock":
+			print("Computer picks Rock")
+			print("Tie")
+			ties += 1 
+		elif cMove == "paper":
+			print("Computer picks Paper")
+			print("This is a tie")
+			cScore += 1
+		else:
+			print("Computer picks Scissors")
+			print("Rock breaks scissors")
+			pScore += 1
 # Player picks scissors
-	if pMove == "s":
-		pass
+	elif pMove == "s":
+				print(pName + " picked Rock")
+		if cMove == "rock":
+			print("Computer picks Rock")
+			print("Rock breaks Scissors")
+			cScore += 1 
+		elif cMove == "paper":
+			print("Computer picks Paper")
+			print("Scissors cuts paper")
+			pScore += 1
+		else:
+			print("Computer picks Scissors")
+			print("This is a tie")
+			ties += 1
 # check if pMove is valid
 	else:
 		print("That is not an option")
